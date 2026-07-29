@@ -1,1 +1,29 @@
-
+{
+  "ApiVersion": 2,
+  "DefaultLang": "en",
+  "PopupsEnabled": true,
+  "Name": "mode.name",
+  "Description": "mode.description",
+  "MapLists": [
+    { "MapListId": 1, "Name": "MapList/AllMaps" }
+  ],
+  "Parameters": {
+    "Bool": [
+      { "Name": "MapRotation", "DisplayName": "GmParams/MapRotation", "Default": true }
+    ],
+    "Dropdown": [
+      {
+        "Name": "default_game_mode_length",
+        "DisplayName": "GmParams/Length",
+        "Default": "Length_XL",
+        "Order": 6,
+        "Variants": [
+          { "Name": "Length_S",  "DisplayName": "GmParams/Length_S" },
+          { "Name": "Length_M",  "DisplayName": "GmParams/Length_M" },
+          { "Name": "Length_L",  "DisplayName": "GmParams/Length_L" },
+          { "Name": "Length_XL", "DisplayName": "GmParams/Length_XL" }
+        ]
+      }
+    ]
+  }
+}
