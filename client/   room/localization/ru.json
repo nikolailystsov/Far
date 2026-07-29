@@ -1,1 +1,26 @@
+{
+  "mode.name": "🏗️ ПОЛИГОН ДЛЯ ТЕСТОВ",
+  "mode.description": "Режим-песочница с RGB-зоной, часами и крутым лидербордом",
 
+  "params.MapRotation": "Ротация карт",
+  "params.OnlyPlayerBlocksDmg": "Урон только по блокам игроков",
+  "params.LoosenBlocks": "Ослабить блоки",
+  "params.FriendlyFire": "Огонь по своим",
+
+  "Hint/Welcome": "🏗️ Добро пожаловать в ПОЛИГОН!",
+  "Hint/RGBZone": "🌈 Радужная зона",
+  "Hint/TimeZone": "🕐 Текущее время",
+  "Hint/GiveAll": "🎁 Ты получил ВСЁ!",
+  "Hint/ClearAll": "🧹 Ты полностью очищен!",
+  "Hint/Money": "💰 Ты получил 1000 очков!",
+  "Hint/Banned": "⛔ ТЫ ЗАБАНЕН!",
+
+  "Statistics/Kills": "Убийства",
+  "Statistics/KillsShort": "K",
+  "Statistics/Deaths": "Смерти",
+  "Statistics/DeathsShort": "D",
+  "Statistics/Scores": "Очки",
+  "Statistics/ScoresShort": "$",
+  "Statistics/ZoneEnters": "Заходов в зоны",
+  "Statistics/ZoneEntersShort": "Z"
+}
