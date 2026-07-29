@@ -1,28 +1,45 @@
 {
+  "Name": "ПОЛИГОН ДЛЯ ТЕСТОВ",
+  "Description": "Режим-песочница с RGB-зоной, часами и крутым лидербордом",
+  "DefaultLang": "ru",
+  "StartClientVersion": 703,
   "ApiVersion": 2,
-  "DefaultLang": "en",
-  "PopupsEnabled": true,
-  "Name": "mode.name",
-  "Description": "mode.description",
+  "MapFilter": {
+    "IsBlank": false,
+    "HasParcourEnd": false
+  },
   "MapLists": [
-    { "MapListId": 1, "Name": "MapList/AllMaps" }
+    {
+      "MapListId": 324,
+      "Name": "Официальные карты"
+    },
+    {
+      "MapListId": 581,
+      "Name": "Интересные карты"
+    }
   ],
   "Parameters": {
     "Bool": [
-      { "Name": "MapRotation", "DisplayName": "GmParams/MapRotation", "Default": true }
-    ],
-    "Dropdown": [
       {
-        "Name": "default_game_mode_length",
-        "DisplayName": "GmParams/Length",
-        "Default": "Length_XL",
-        "Order": 6,
-        "Variants": [
-          { "Name": "Length_S",  "DisplayName": "GmParams/Length_S" },
-          { "Name": "Length_M",  "DisplayName": "GmParams/Length_M" },
-          { "Name": "Length_L",  "DisplayName": "GmParams/Length_L" },
-          { "Name": "Length_XL", "DisplayName": "GmParams/Length_XL" }
-        ]
+        "Name": "MapRotation",
+        "DisplayName": "params.MapRotation",
+        "Default": true,
+        "Order": 1
+      },
+      {
+        "Name": "OnlyPlayerBlocksDmg",
+        "DisplayName": "params.OnlyPlayerBlocksDmg",
+        "Order": 2
+      },
+      {
+        "Name": "LoosenBlocks",
+        "DisplayName": "params.LoosenBlocks",
+        "Order": 3
+      },
+      {
+        "Name": "FriendlyFire",
+        "DisplayName": "params.FriendlyFire",
+        "Order": 4
       }
     ]
   }
