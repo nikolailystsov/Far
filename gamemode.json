@@ -21,24 +21,26 @@
   "Parameters": {
     "Bool": [
       {
-        "Name": "MapRotation",
-        "DisplayName": "params.MapRotation",
+        "Name": "RedTeam",
+        "DisplayName": "Команда Красных",
         "Default": true,
         "Order": 1
       },
       {
-        "Name": "OnlyPlayerBlocksDmg",
-        "DisplayName": "params.OnlyPlayerBlocksDmg",
+        "Name": "BlueTeam",
+        "DisplayName": "Команда Синих",
+        "Default": true,
         "Order": 2
       },
       {
-        "Name": "LoosenBlocks",
-        "DisplayName": "params.LoosenBlocks",
+        "Name": "MapRotation",
+        "DisplayName": "Ротация карт",
+        "Default": true,
         "Order": 3
       },
       {
         "Name": "FriendlyFire",
-        "DisplayName": "params.FriendlyFire",
+        "DisplayName": "Огонь по своим",
         "Order": 4
       }
     ]
