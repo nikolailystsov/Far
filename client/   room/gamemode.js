@@ -14,20 +14,23 @@ Damage.GetContext().DamageOut.Value = false;
 // Название режима
 Properties.GetContext().GameModeName.Value = "🏗️ ПОЛИГОН";
 
-// ===== 2. ЯВНОЕ СОЗДАНИЕ КОМАНД =====
-// Сначала удаляем возможные старые команды (на всякий случай)
+// ===== 2. СОЗДАНИЕ КОМАНД =====
+// Удаляем старые команды, если они есть
 try { Teams.Remove("Red"); } catch(e) {}
 try { Teams.Remove("Blue"); } catch(e) {}
 
-// Создаём команду "Красные"
-Teams.Add("Red", "🔴 Красные", new Color(1, 0, 0, 0));
-var redTeam = Teams.Get("Red");
-redTeam.Spawns.SpawnPointsGroups.Add(2); // Группа спавна 2
+// Создаем команды, только если соответствующие параметры включены
+var red = GameMode.Parameters.GetBool("RedTeam");
+var blue = GameMode.Parameters.GetBool("BlueTeam");
 
-// Создаём команду "Синие"
-Teams.Add("Blue", "🔵 Синие", new Color(0, 0, 1, 0));
-var blueTeam = Teams.Get("Blue");
-blueTeam.Spawns.SpawnPointsGroups.Add(1); // Группа спавна 1
+if (red || !red && !blue) {
+    Teams.Add("Red", "🔴 Красные", new Color(1, 0, 0, 0));
+    Teams.Get("Red").Spawns.SpawnPointsGroups.Add(2);
+}
+if (blue || !red && !blue) {
+    Teams.Add("Blue", "🔵 Синие", new Color(0, 0, 1, 0));
+    Teams.Get("Blue").Spawns.SpawnPointsGroups.Add(1);
+}
 
 // ===== 3. ОСНОВНЫЕ НАСТРОЙКИ =====
 // Моментальный спавн
