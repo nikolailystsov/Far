@@ -1,48 +1,26 @@
 {
-  "Name": "ПОЛИГОН ДЛЯ ТЕСТОВ",
-  "Description": "Режим-песочница с RGB-зоной, часами и крутым лидербордом",
-  "DefaultLang": "ru",
-  "StartClientVersion": 703,
-  "ApiVersion": 2,
-  "MapFilter": {
-    "IsBlank": false,
-    "HasParcourEnd": false
-  },
-  "MapLists": [
-    {
-      "MapListId": 324,
-      "Name": "Официальные карты"
-    },
-    {
-      "MapListId": 581,
-      "Name": "Интересные карты"
-    }
-  ],
-  "Parameters": {
-    "Bool": [
+    "Name": "ПОЛИГОН С ЗОНАМИ",
+    "Description": "Редактор с дополнительными зонами: RGB, часы, выдача, очистка и бан",
+    "StartClientVersion": 334,
+    "ApiVersion": 2,
+    "MapLists": [
       {
-        "Name": "RedTeam",
-        "DisplayName": "Команда Красных",
-        "Default": true,
-        "Order": 1
-      },
-      {
-        "Name": "BlueTeam",
-        "DisplayName": "Команда Синих",
-        "Default": true,
-        "Order": 2
-      },
-      {
-        "Name": "MapRotation",
-        "DisplayName": "Ротация карт",
-        "Default": true,
-        "Order": 3
-      },
-      {
-        "Name": "FriendlyFire",
-        "DisplayName": "Огонь по своим",
-        "Order": 4
+        "MapListId": 8401,
+        "Name": "Заготовки"
       }
-    ]
+    ],
+    "Parameters": {
+      "Bool": [
+        {
+          "Name": "RedTeam",
+          "DisplayName": "Teams/Red",
+          "Default": true
+        },
+        {
+          "Name": "BlueTeam",
+          "DisplayName": "Teams/Blue",
+          "Default": true
+        }
+      ]
+    }
   }
-}
